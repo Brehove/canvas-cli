@@ -72,6 +72,19 @@ The skill package teaches Codex how to:
 
 That means you can use plain-language requests instead of memorizing commands.
 
+### Start each session (first thing to do)
+
+1. Open Terminal in the folder for the course you want to work on.
+2. Start Codex in that folder.
+3. If this is your first time in that folder, ask Codex:
+   `Use the canvas skill to help me run canvas config in this folder.`
+4. For day-to-day work, start with:
+   `Use the canvas skill to help me update content in [COURSE NAME].`
+
+Why this matters:
+- The CLI reads `.canvas-config.yaml` from your current folder (or parent folders).
+- Keeping each term/course in its own folder makes files easier to manage.
+
 ### Example prompts you can paste to Codex
 
 1. Update one assignment:
