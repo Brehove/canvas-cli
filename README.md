@@ -8,6 +8,7 @@ Instead of memorizing commands, you can ask Codex things like:
 - `After I approve, apply updates and push all module changes.`
 
 Codex then uses the Canvas CLI for pull/edit/push steps while keeping files local in your working folders.
+The skill also preserves HTML tables during conversion so accessibility markup (captions, header scope, and table structure) is retained instead of being flattened by standard markdown table syntax.
 
 Before using this skill, set up Codex first:
 - Codex setup guide: https://developers.openai.com/codex/cli
