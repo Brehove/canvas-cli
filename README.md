@@ -1,6 +1,17 @@
 # Canvas CLI
 
-A command-line tool for faculty and staff to pull and push Canvas LMS course content as local Markdown/YAML files. It is designed to work well with Codex CLI so you can ask Codex to help edit course materials safely before publishing.
+This is a Codex skill package that lets faculty and staff use natural language to work with Canvas course content inside their local filesystem.
+Instead of memorizing commands, you can ask Codex things like:
+
+- `Use the canvas skill to pull my entire course.`
+- `Evaluate everything for accessibility and give me an update plan.`
+- `After I approve, apply updates and push all module changes.`
+
+Codex then uses the Canvas CLI for pull/edit/push steps while keeping files local in your working folders.
+
+Before using this skill, set up Codex first:
+- Codex setup guide: https://developers.openai.com/codex/cli
+- Codex overview: https://openai.com/codex/
 
 ## What This Solves
 
