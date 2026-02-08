@@ -82,7 +82,8 @@ That means you can use plain-language requests instead of memorizing commands.
    `Use the canvas skill to help me update content in [COURSE NAME].`
 
 Why this matters:
-- The CLI reads `.canvas-config.yaml` from your current folder (or parent folders).
+- The CLI does not read config from the skill folder. It looks from your current folder upward through parent folders.
+- You usually need only one shared config at a root folder (example: `~/canvas-work/.canvas-config.yaml`), then all course subfolders under that root can use it.
 - Keeping each term/course in its own folder makes files easier to manage.
 
 ### Example prompts you can paste to Codex
