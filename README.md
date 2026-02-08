@@ -9,25 +9,29 @@ A command-line tool for faculty and staff to pull and push Canvas LMS course con
 - Push only what you intend, with `--dry-run` previews first
 - Use Codex to draft, revise, and QA course content before syncing
 
-## Install in Codex (No Git Commands)
+## Easiest Setup (Ask Codex To Do It)
 
-This is the easiest path for faculty/staff who are new to terminal workflows.
+This is the recommended path for faculty/staff who are new to terminal tools.
 
 1. Open Terminal.
 2. Start Codex CLI.
-3. Paste this message to Codex:
+3. Paste this request to Codex:
 
 ```text
-Install this Codex skill from GitHub:
+I am new to terminal workflows.
+Please install and set up this Canvas skill from:
 https://github.com/Brehove/canvas-cli
 
-Skill path: .
+Please handle any skill-path details for me automatically.
+Then walk me through first-time setup step by step.
 ```
 
-4. Wait for Codex to confirm install.
+4. Follow Codex prompts. It may ask for approval before running install commands.
 5. If Codex says new skills are not loaded yet, restart Codex once.
 
-## Quick Start After Install
+## Manual Setup (Optional)
+
+Use this only if you want to run commands yourself.
 
 ```bash
 # 1) Install the CLI package from the installed skill folder
@@ -47,13 +51,15 @@ canvas courses
 
 ## Find Your Canvas API Token
 
-1. Log in to Canvas.
-2. Open `Account`, then `Settings`.
-3. Select `+ New Access Token`.
-4. Enter a purpose (example: `Codex Canvas CLI`), then create the token.
-5. Copy the token and paste it into `canvas config` when prompted.
+1. Log in to Canvas in your browser.
+2. In the left menu, select `Account`, then `Settings`.
+3. Find and select `+ New Access Token`.
+4. Enter a purpose (example: `Codex Canvas CLI`) and optional expiration date.
+5. Select create/generate token.
+6. Copy the token immediately and paste it into `canvas config` when prompted.
 
 Treat the token like a password. If it is exposed, revoke it in Canvas and create a new one.
+If your Canvas account does not show token creation, contact your Canvas admin.
 
 ## Faculty Workflows (Codex + Canvas)
 
