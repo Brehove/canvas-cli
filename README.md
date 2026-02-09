@@ -124,10 +124,7 @@ Why this matters:
 3. Make a table fully accessible:
    `Find the grading table in this pulled assignment, add a caption and proper column/row headers with scope attributes, preserve table structure, then show me the dry-run push command.`
 
-4. Review ungraded discussions:
-   `Pull ungraded submissions for 2.4 Discussion in PHIL-123 (including discussion posts), summarize common issues, and draft reusable feedback comments.`
-
-5. Update and attach a rubric:
+4. Update and attach a rubric:
    `Pull rubrics for PHIL-123, revise the Discussion rubric for clearer performance levels, run a dry-run push, then attach it to assignment 2.4 after I confirm.`
 
 If you prefer manual commands, see the command reference below.
