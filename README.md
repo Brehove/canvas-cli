@@ -1,4 +1,4 @@
-# Canvas CLI for Codex
+# Canvas Skill for Codex
 
 This is a Codex skill package that lets faculty and staff use natural language to work with Canvas course content inside their local filesystem.
 Instead of memorizing commands, you can ask Codex things like:
@@ -40,7 +40,8 @@ I am new to terminal workflows.
 Please install and set up this Canvas skill from:
 https://github.com/Brehove/canvas-cli-for-codex
 
-Please handle any skill-path details for me automatically.
+Please install it with skill path `.` and install name `canvas`
+so it lands at `~/.codex/skills/canvas`.
 Then walk me through first-time setup step by step.
 ```
 
@@ -53,7 +54,12 @@ Use this only if you want to run commands yourself.
 
 ```bash
 # 1) Install the CLI package from the installed skill folder
-pip install -e ~/.codex/skills/canvas
+# Prefer canonical skill name; fallback to repo-name install folder.
+SKILL_DIR=~/.codex/skills/canvas
+if [ ! -d "$SKILL_DIR" ]; then
+  SKILL_DIR=~/.codex/skills/canvas-cli-for-codex
+fi
+pip install -e "$SKILL_DIR"
 
 # 2) Create a working folder for your term
 mkdir -p ~/canvas-work/spring-2026
@@ -203,7 +209,7 @@ criteria:
 
 ## Codex Skill Usage
 
-When this repo is available at `~/.codex/skills/canvas`, Codex can:
+When this repo is installed as a skill (usually `~/.codex/skills/canvas`, sometimes `~/.codex/skills/canvas-cli-for-codex`), Codex can:
 
 - Discover and run `canvas` commands
 - Pull files before editing
