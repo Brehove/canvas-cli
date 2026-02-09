@@ -1,4 +1,4 @@
-"""Setup script for Canvas CLI."""
+"""Setup script for the Canvas Skill CLI."""
 
 from setuptools import setup, find_packages
 
@@ -17,7 +17,7 @@ setup(
         ],
     },
     author="Canvas CLI Contributors",
-    description="Faculty-friendly CLI for pulling and pushing Canvas LMS content with Codex workflows",
+    description="Canvas Skill for Codex: faculty-friendly CLI for pulling and pushing Canvas LMS content",
     url="https://github.com/Brehove/canvas-cli-for-codex",
     license="MIT",
     python_requires=">=3.9",
